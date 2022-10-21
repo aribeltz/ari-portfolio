@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----------- CSS LINKING ----------->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!----------- FONT LINKING ----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Designed by Ari</title>
+  </head>
+  <body>
+    <!----------- HEADER CONTAINS NAV BAR ----------->
+    <header id="navbar" class="header">
+      <!-- LOGO WILL GO HERE -->
+      
+      <nav class="navbar">
+        <a href="#"></a>
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link, btn" href="about-me.html"><span>About Me</span></a>
+          </li>
+          <li>
+            <a class="main-nav-link, btn" href="#section-projects"><span>My Work</span></a>
+          </li>
+          <li>
+            <a class="main-nav-link, btn" href="#testimonials"
+              ><span>Testimonials</span></a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link, btn-alt" href="#contact-section"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ------------------------------ -->
+      <!----------- HERO SECTION ----------->
+      <!-- ------------------------------ -->
+      <section class="section-hero, container">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Hi, I'm <span>Ari.</span></h1>
+
+            <p class="hero-description, margin-bottom-sm">
+              <!-- I'm a full-stack developer with a passion for creating beautiful, functional applications.  -->
+              I'm a full-stack development student at LEARN Academy. Focused on merging my love for functionality and design after transitioning from my previous career in the animal care field.
+
+              <br>
+              
+            </p>
+            <div class="programming-icons, margin-bottom-md">
+              <ion-icon class="hero-icon" name="logo-react"></ion-icon>
+              <ion-icon class="hero-icon" name="logo-javascript"></ion-icon>
+              <ion-icon class="hero-icon" name="logo-html5"></ion-icon>
+              <ion-icon class="hero-icon" name="logo-css3"></ion-icon>
+              <ion-icon class="hero-icon" name="logo-sass"></ion-icon>
+              <a target="_blank" href="https://github.com/aribrashear">
+                <ion-icon class="icon-link" name="logo-github"></ion-icon>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/ariana-brashear-2a6571250/"
+                ><ion-icon class="icon-link" name="logo-linkedin"></ion-icon
+              ></a>
+            </div>
+            <div class="hero_btn_box">
+              <a href="#projects" class="btn-alt">My Work</a>
+            </div>
+          </div>
+          
+            <img
+              src="/img/hero-img.png"
+              class="hero-img"
+              alt="An image of the website's author."
+            />
+          
+        </div>
+      </section>
+
+      <!-- ------------------------------ -->
+      <!----------- PROJECTS SECTION ----------->
+      <!-- ------------------------------ -->
+      <section id="section-projects" class="section-projects, container">
+        <div class = "projects-header">
+          <h2
+          class="heading-secondary"
+          id="projects">
+          Projects:
+        </h2>
+        </div>
+   
+        <div class="projects-grid">
+          <!--  -->
+          <!-- TIC-TAC-TOE -->
+          <!--  -->
+          <div class="card, grid-item, projects-grid-item-1">
+            <div class="wrapper">
+              <div class="video-box">
+                <video
+                  class="video"
+                  src="vid/tic-tac-toe.mov"
+                  autoplay
+                  muted
+                  loop
+                  alt="A video showing gameplay of tic-tac-toe."
+                ></video>
+              </div>
+              <div class="content">
+                <div class="content-box">
+                  <h2 class="title, margin-bottom-xs">Tic-Tac-Toe</h2>
+                  <div class="icons, margin-bottom-xs">
+                    <ul>
+                      <li>
+                        <ion-icon name="logo-react"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="logo-html5"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="logo-css3"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon
+                          name="logo-javascript"
+                        ></ion-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>Designed by Ariana Brashear</p>
+                  <p class="margin-bottom-xs">Programmed by Ariana Brashear</p>
+                  <div class="video, margin-bottom-sm">
+                    <a
+                      href="https://aribrashear.github.io/tic-tac-toe/"
+                      target="_blank"
+                      class="btn-alt"
+                      >See Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <!-- OMNIFOOD -->
+          <!--  -->
+
+          <div class="card, grid-item, projects-grid-item-2">
+            <div class="wrapper">
+              <div class="video-box">
+                <video
+                  class="video"
+                  src="vid/omnifood-ari.mov"
+                  autoplay
+                  muted
+                  loop
+                  alt="A video showing a user scrolling through a website."
+                ></video>
+              </div>
+              <div class="content">
+                <div class="content-box">
+                  <h2 class="title, margin-bottom-xs">Omnifood</h2>
+                  <div class="icons, margin-bottom-xs">
+                    <ul>
+                      <li>
+                        <ion-icon name="logo-html5"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="logo-css3"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="logo-javascript"></ion-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>Designed by Jonas Schmedtmann</p>
+                  <p class="margin-bottom-xs">Programmed by Ariana Brashear</p>
+                  <div class="video, margin-bottom-sm">
+                    <a
+                      href="https://ari-omnifood.netlify.app/"
+                      target="_blank"
+                      class="btn-alt"
+                      >See Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <!--  -->
+          <!-- CAT TINDER -->
+          <!--  -->
+          <!-- <div class="card, grid-item, projects-grid-item-3">
+            <div class="wrapper">
+              <div class="video-box">
+                <video
+                  class="video"
+                  src="vid/tic-tac-toe.mov"
+                  autoplay
+                  muted
+                  loop
+                  alt="A video showing gameplay of tic-tac-toe."
+                ></video>
+              </div>
+              <div class="content">
+                <div class="content-box">
+                  <h2 class="title, margin-bottom-xs">Tic-Tac-Toe</h2>
+                  <div class="icons, margin-bottom-xs">
+                    <ul>
+                      <li>
+                        <ion-icon name="logo-react"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="logo-html5"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="logo-css3"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon
+                          name="logo-javascript"
+                        ></ion-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>Designed by Ariana Brashear</p>
+                  <p class="margin-bottom-xs">Programmed by Ariana Brashear</p>
+                  <div class="video, margin-bottom-sm">
+                    <a
+                      href="https://aribrashear.github.io/tic-tac-toe/"
+                      target="_blank"
+                      class="btn-alt"
+                      >See Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </section>
+      <!-- ------------------------------ -->
+      <!----------- TESTIMONIALS SECTION ----------->
+      <!-- ------------------------------ -->
+      <section id="testimonials" class="section-testimonials, container">
+        <div class="testimonials-wrapper">
+        <h2 class="heading-secondary">Testimonials:</h2>
+        <div class="testimonials-grid">
+          <div id="content" class="testimonial-box, grid-item, grid-item-1">
+            <div class="testimonial">
+              <blockquote>
+                <div class="quote-container">
+                  I have had the pleasure of working with Ari on several projects.
+                  For her level of experience she is an exceptionally good full
+                  stack developer. She always seeks more efficient ways to
+                  complete a project without cutting any corners, and is diligent
+                  about presenting the best final product as possible.
+                  Additionally, above her ability as a full stack developer is her
+                  ability to be a mentor to other developers who are not yet at
+                  her level of experience. She will take her personal time to help
+                  somebody who is struggling and do so in a way that helps further
+                  build the other persons understanding of the process. I would
+                  happily work with Ari on any project in the future.
+                </div>
+
+              </blockquote>
+              <p>David Thomas &mdash; Full-Stack Developer</p>
+            </div>
+          </div>
+
+          <div id="content" class="testimonial-box, grid-item, grid-item-2">
+            <div class="testimonial">
+              <blockquote>
+                <div class="quote-container">
+                  Ari is the “Queen of Design”. She has an incredible knowledge of
+                  CSS and HTML. She has a great concept of how container should be
+                  organized, placed on a page, and how a user will react to that
+                  design/layout. Ari is very easy to work with, communicates
+                  wonderfully, and can explain word problems (JavaScript) in great
+                  detail so anybody can understand. She’s been a great friend this
+                  cohort and someone I can rely on if I ever need help.
+                </div>
+              
+              </blockquote>
+              <p class="testimonial-p-right">
+                Zack Rohde&mdash; Full-Stack Developer
+              </p>
+            </div>
+          </div>
+
+          <div id="content" class="testimonial-box, grid-item, grid-item-3">
+            <div class="testimonial">
+              <blockquote>
+                <div class="quote-container">
+                  Ari is a super friendly teammate who likes to keep learning and
+                  finding the most efficient way of solving problems. Whether
+                  asking questions and finding potential solutions or willingly
+                  taking time out of her day to review and assist others, she is
+                  extremely reliable to depend on. With her natural skills in
+                  front-end, she can make anything look and feel better!
+                </div>
+
+              </blockquote>
+              <p>Joseph Han &mdash; Full-Stack Developer</p>
+            </div>
+          </div>
+
+          <div id="content" class="testimonial-box, grid-item, grid-item-4">
+            <div class="testimonial">
+              <blockquote>
+                <div class="quote-container">
+                Ari has been such a wonderful partner during our time at LEARN. Not only is she a constant spark of joy and positivity, she is an energetic and hard worker! Always eager to step up, she was absolutely critical in developing the win condition on our Tic-Tac-Toe project.
+                </div>
+
+              </blockquote>
+              <p class="testimonial-p-right">
+                Lyssa Martin &mdash; Full-Stack Developer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <!-- ------------------------------ -->
+    <!----------- FORM SECTION ----------->
+    <!-- ------------------------------ -->
+    <footer>
+      <section id="contact-section" class="contact-section">
+        <div class="contact-box">
+          <h2 class="heading-secondary">Let's work together.</h2>
+          
+            <div class="email-box">
+              <ion-icon class="email-svg" name="mail-outline"></ion-icon>
+              <a
+                href="mailto:aribrashear@gmail.com?subject=Inquiry of Services"
+              >
+                aribrashear@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-links-box">
+          <div class="footer-box">
+                <a target="_blank" href="https://drive.google.com/file/d/1ZVBufF2LR1hdOhY0dvZYhP57p9K8HW16/view?usp=sharing">Resume</a>
+                <a href="about-me.html">About Me</a>
+                <a href="#section-projects">My Work</a>
+                <a href="#testimonials">Testimonials</a>
+        </div>
+        <div class="footer-box">
+          <p>Find me on social media:</p>
+          <div class="footer-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/ariana-brashear-2a6571250/"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a target="_blank" href="https://github.com/aribrashear">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+      </div>
+          <div class="footer-box">
+                
+      
+        </div>
+        </section>
+    </footer>
+
+    <!----------- IONICONS ----------->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- SMOOTH SCROLLING -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-------------------------------->
+    <!----------- SCRIPT LINKING ----------->
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
