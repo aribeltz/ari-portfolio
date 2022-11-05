@@ -1,12 +1,21 @@
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MRM6VGVQB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5MRM6VGVQB');
+</script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!----------- CSS LINKING ----------->
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/queries.css" />
+  <link rel="stylesheet" href="./css/general.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/queries.css" />
 
   <!----------- FONT LINKING ----------->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,41 +25,47 @@
     rel="stylesheet"
   />
 </head>
+
 <body>
   <header id="navbar" class="header">
     <!-- LOGO WILL GO HERE -->
-
-    <nav class="navbar">
+    
+    
       <a href="#"></a>
+      <nav class="main-nav">
       <ul class="main-nav-list">
         <li>
-          <a class="main-nav-link, btn" href="index.html"><span>Home</span></a>
+          <a class="main-nav-link btn" href="./index.html"><span>Home</span></a>
         </li>
         <li>
-          <a class="main-nav-link, btn" href="index.html#section-projects"
-            ><span>My Work</span></a
-          >
+          <a class="main-nav-link btn" href="./index.html#section-projects"><span>My Work</span></a>
         </li>
         <li>
-          <a class="main-nav-link, btn" href="index.html#testimonials"
+          <a class="main-nav-link btn" href="./index.html#testimonials"
             ><span>Testimonials</span></a
           >
         </li>
         <li>
-          <a class="main-nav-link, btn-alt" href="index.html#contact-section"
-            ><span>Contact</span></a
-          >
+          <a class="main-nav-link btn btn-alt" href="index.html#contact-section"><span>Contact</span></a>
         </li>
       </ul>
     </nav>
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+
   </header>
   <main>
     <div class="about-me-box">
-      <div class="about-img-box, about-grid-item-1">
-        <img class="about-img" src="/img/about-img.PNG" />
-      </div>
-      <div class="about-me-text, about-grid-item-2">
-        <h1 class="margin-bottom-sm">About Me</h1>
+        <picture class="about-img-box about-grid-item-1">
+          <source srcset="./img/about-img.webp" type="image/webp" />
+          <source srcset="./img/about-img-min.png" type="image/png" />
+          <img class="about-img" src="./img/about-img-min.png" />
+        </picture>
+        <div class="about-text-container">
+        <h1 class="about-header margin-bottom-sm">About Me</h1>
+      <div class="about-me-text about-grid-item-3">
         <p>
           When I was 9 years old, my parents bought me a colorful little book called 'HTML for beginners'. I used it to create my very first webpage, a 3-column table containing images of my favorite flowers, and a few input boxes leading to nowhere.
         </p>
@@ -61,75 +76,43 @@
         </p>
         <div class="resume-box">
         <h2 class="margin-bottom-xs">I'd love to work with you!</h2>
-        <a target="_blank" class="resume-link" href="https://drive.google.com/file/d/1ZVBufF2LR1hdOhY0dvZYhP57p9K8HW16/view?usp=sharing">Here's my Resume.</a>
+        <a target="_blank" class="resume-link" href="https://drive.google.com/file/d/13Ri-AGmD5EEL8PcNdsK_dJQgkkhfjfwu/view?usp=sharing">Here's my Resume.</a>
       </div>
-      <!-- <div class="other-links-box, about-grid-item-3">
-        <h2>
-        Technical Skills:
-        </h2>
-        <div class="skills-flex">
-          <div>
-            <p><str>Languages:</str></p>
-            <p>JavaScript</p>
-            <p>Ruby</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>SQL</p>
-          </div>
-          <div>
-            <p><str>Frameworks:</str></p>
-            <p>React</p>
-            <p>Ruby on Rails</p>
-          </div>
-        <div>
-          <p><str>Databases:</str></p>
-        </div>
-        <div>
-          <p><str>Testing:</str></p>
-        </div>
-        <div>
-          <p><str>Version Control:</str></p>
-        </div>
-        
       </div>
-      </div> -->
-      <!-- <div class="other-links-box, about-grid-item-4">
-        <h2>
-        Resume:
-        </h2>
-   
-      </div> -->
-    </div>
+  </div>
   </main>
   <footer>
     <section id="contact-section" class="contact-section">
-      <div class="footer-links-box">
-      <div class="footer-box">
-            <a target="_blank" href="https://drive.google.com/file/d/1ZVBufF2LR1hdOhY0dvZYhP57p9K8HW16/view?usp=sharing">Resume</a>
-            <a href="index.html">Home</a>
-            <a href="index.html#section-projects">My Work</a>
-            <a href="index.html#testimonials">Testimonials</a>
-    </div>
-    <div class="footer-box">
-      <p>Find me on social media:</p>
-      <div class="footer-icons">
-        <a target="_blank" href="https://www.linkedin.com/in/ariana-brashear-2a6571250/"
-          ><ion-icon name="logo-linkedin"></ion-icon
-        ></a>
-        <a target="_blank" href="https://github.com/aribrashear">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
+      <div class="footer">
+        <div class="footer-social">
+          <p class="margin-bottom-xs">Find me on social media:</p>
+          <div class="footer-icons margin-bottom-xs">
+            <a target="_blank" href="https://www.linkedin.com/in/ari-brashear/"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a target="_blank" href="https://github.com/aribrashear">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+              <a target="_blank" href="https://drive.google.com/file/d/13Ri-AGmD5EEL8PcNdsK_dJQgkkhfjfwu/view?usp=sharing">Resume</a>
+              <a href="./index.html">Home</a>
+              <a href="./index.html#section-projects">My Work</a>
+              <a href="./index.html#testimonials">Testimonials</a>
+        </div>
+
+        <div class="footer-box">
+              
+    
       </div>
-  </div>
-      <div class="footer-box">
-            
-  
-    </div>
-    </section>
-  </footer>  
+      </section>
+  </footer>
+</div>
   <!----------- IONICONS ----------->
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
   ></script>
+  <script defer src="./js/script.js"></script>
 </body>

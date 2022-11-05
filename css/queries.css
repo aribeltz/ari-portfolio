@@ -1,0 +1,298 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, we assume that 1rem = 1em = 16px. */
+
+/* ************************** */
+/* BELOW 1344px (Smaller Desktops) */
+/* ************************** */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/* ************************** */
+/* BELOW 1200px (Landscape Tablets) */
+/* ************************** */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .projects-grid {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  /* .hero {
+    gap: 4.8rem;
+  } */
+}
+
+/* ************************** */
+/* BELOW 944px (Tablets) */
+/* ************************** */
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 OR 50% */
+    font-size: 50%;
+  }
+
+  picture {
+    width: 70%;
+  }
+
+  .hero-text-box {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+
+    /* Hide Navigation */
+    /* Allows NO transitions at all:
+    display: none; */
+
+    /* 1) Hide it Visually */
+    opacity: 0;
+
+    /* 2) Make it Unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .btn {
+    color: #fffffe;
+    background-color: #ef6060;
+  }
+
+  .nav-open .btn-alt {
+    background-color: #00ebc7;
+    color: #00214d;
+    text-shadow: 1px 1px #fffffe;
+  }
+  .nav-open .btn:hover {
+    color: #fffffe;
+    text-shadow: 1px 1px #9d0e26;
+  }
+
+  .btn.btn-alt:hover:before {
+    top: -35%;
+    background-color: #ef6060;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  .btn.btn-alt:hover:after {
+    top: -45%;
+    background-color: #ef6060;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .about-me-box {
+    margin: 0 9.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 100%;
+    margin-bottom: 2.4rem;
+    margin-top: 6.2rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ************************** */
+/* BELOW 704px (Smaller Tablets) */
+/* ************************** */
+
+@media (max-width: 44em) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(1.8rem, auto);
+    align-items: center;
+    justify-items: center;
+    column-gap: 6.4rem;
+  }
+}
+
+/* ************************** */
+/* BELOW 544px (Phones) */
+/* ************************** */
+@media (max-width: 34em) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item-1 {
+    grid-column: 1;
+  }
+  .grid-item-2 {
+    grid-column: 1;
+  }
+  .grid-item-3 {
+    grid-column: 1;
+  }
+  .grid-item-4 {
+    grid-column: 1;
+  }
+  .footer-social p {
+    display: none;
+  }
+
+  .footer-links a {
+    font-size: 1.6rem;
+  }
+
+  .resume-box a {
+    font-size: 2.4rem;
+  }
+  .about-me-box picture {
+    display: none;
+  }
+  .about-me-box {
+    margin: 0 3rem;
+    padding: 0;
+    margin-top: 17rem;
+    margin-bottom: 14rem;
+  }
+
+  .hero picture {
+    display: none;
+  }
+
+  .contact-box {
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* ************************** */
+/* Fixing Safari Flexbox Gap */
+/* ************************** */
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
