@@ -161,14 +161,10 @@ ion-icon {
 }
 
 .hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  margin-top: 18rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  height: 95vh;
+  height: 100%;
 }
 
 .heading-primary span {
@@ -180,7 +176,11 @@ ion-icon {
 }
 
 .hero-img {
-  width: 100%;
+  width: 70%;
+}
+
+img {
+  max-width: 100%;
 }
 
 .icon-link:hover {
