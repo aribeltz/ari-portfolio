@@ -97,6 +97,10 @@ body {
   box-shadow: 0 0 0 0.4rem rgba(255, 84, 112, 0.5);
 }
 
+.hero-description {
+  max-width: 70rem;
+}
+
 /* ******************************** */
 /*** GENERAL REUSABLE COMPONENTS ***/
 /* ******************************** */
