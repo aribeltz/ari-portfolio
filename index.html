@@ -1,404 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MRM6VGVQB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5MRM6VGVQB');
-</script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!----------- CSS LINKING ----------->
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/queries.css" />
-
-    <!----------- FONT LINKING ----------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Designed by Ari</title>
-  </head>
-
-  <body>
-    <div class="page-container">
-      <div class="content-wrap">
-    <!----------- HEADER CONTAINS NAV BAR ----------->
-    <header id="navbar" class="header">
-      <!-- LOGO WILL GO HERE -->
-      
-      
-        <a href="#"></a>
-        <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link btn" href="./about-me.html"><span>About Me</span></a>
-          </li>
-          <li>
-            <a class="main-nav-link btn" href="#section-projects"><span>My Work</span></a>
-          </li>
-          <li>
-            <a class="main-nav-link btn" href="#testimonials"
-              ><span>Testimonials</span></a
-            >
-          </li>
-          <li>
-            <a class="main-nav-link btn btn-alt" href="#contact-section"><span>Contact</span></a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-  
-    </header>
-
-    <main>
-      <!-- ------------------------------ -->
-      <!----------- HERO SECTION ----------->
-      <!-- ------------------------------ -->
-      <section class="section-hero container">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">Hi, I'm <span>Ari.</span></h1>
-            <p class="hero-description margin-bottom-sm">
-              I'm a full-stack developer with a passion for turning complex ideas into clean, scalable interfaces. 
-              With a strong background in React and TypeScript, I focus on building front-end architectures that are as maintainable as they are aesthetically polished. 
-            
-            </p>
-            <div class="programming-icons margin-bottom-md">
-              <ion-icon class="hero-icon" name="logo-react"></ion-icon>
-              <ion-icon class="hero-icon" name="logo-javascript"></ion-icon>
-              <ion-icon class="hero-icon" name="logo-html5"></ion-icon>
-              <ion-icon class="hero-icon" name="logo-css3"></ion-icon>
-              <ion-icon class="hero-icon" name="logo-sass"></ion-icon>
-              <a target="_blank" href="https://github.com/aribeltz">
-                <ion-icon class="icon-link" name="logo-github"></ion-icon>
-              </a>
-              <a target="_blank" href="www.linkedin.com/in/ari-beltz"
-                ><ion-icon class="icon-link" name="logo-linkedin"></ion-icon
-              ></a>
-
-            </div>
-            <div class="hero_btn_box">
-              <a href="#projects" class="btn btn-alt">My Work</a>
-            </div>
-          </div>
-          <div class="hero-img">
-            <picture>
-              <source srcset="./img/hero-img.webp" type="image/webp" />
-              <source srcset="./img/hero-img-min.png" type="image/png" />
-              <img
-              src="./img/hero-img-min.png"
-              alt="An image of the website's author."
-              />
-            </picture>
-          </div>
-
-          
-        </div>
-      </section>
-
-      <!-- ------------------------------ -->
-      <!----------- PROJECTS SECTION ----------->
-      <!-- ------------------------------ -->
-      <section id="section-projects" class="section-projects, container">
-        <div class = "projects-header">
-          <h2
-          class="heading-secondary"
-          id="projects">
-          Projects:
-        </h2>
-        </div>
-   
-        <div class="projects-grid">
-          <!--  -->
-          <!-- TIC-TAC-TOE -->
-          <!--  -->
-          <div class="card grid-item projects-grid-item-1">
-              <div class="video-box margin-bottom-sm">
-                <video
-                  class="video"
-                  src="./vid/tic-tac-toe.mp4"
-                  autoplay
-                  muted
-                  loop
-                  preload="auto"
-                  alt="A video showing gameplay of tic-tac-toe."
-                ></video>
-              </div>
-              <div class="content">
-                  <h2 class="title margin-bottom-xs">Tic-Tac-Toe</h2>
-                  <div class="icons margin-bottom-xs">
-                    <ul>
-                      <li>
-                        <ion-icon name="logo-react"></ion-icon>
-                      </li>
-                      <li>
-                        <ion-icon name="logo-html5"></ion-icon>
-                      </li>
-                      <li>
-                        <ion-icon name="logo-css3"></ion-icon>
-                      </li>
-                      <li>
-                        <ion-icon
-                          name="logo-javascript"
-                        ></ion-icon>
-                      </li>
-                    </ul>
-                  </div>
-                  <p>Designed by Ariana Beltz</p>
-                  <p class="margin-bottom-xs">Programmed by Ariana Beltz</p>
-                  <div class="margin-bottom-sm">
-                    <a
-                      href="https://aribeltz.github.io/tic-tac-toe/"
-                      target="_blank"
-                      class="btn btn-alt"
-                      >See Project</a
-                    >
-                    <a
-                      href="https://github.com/aribeltz/tic-tac-toe"
-                      target="_blank"
-                      class="btn btn-alt"
-                      >See Code</a
-                    >
-                  </div>
-              </div>
-          </div>
-
-          <!--  -->
-          <!-- OMNIFOOD -->
-          <!--  -->
-
-          <div class="card grid-item projects-grid-item-1">
-            <div class="video-box margin-bottom-sm">
-              <video
-                class="video"
-                src="./vid/omnifood-ari.mp4"
-                autoplay
-                muted
-                loop
-                preload="auto"
-                alt="A video showing a user scrolling through a website."></video>
-               
-            </div>
-            <div class="content">
-                <h2 class="title margin-bottom-xs">Omnifood</h2>
-                <div class="icons margin-bottom-xs">
-                  <ul>
-                    <li>
-                      <ion-icon name="logo-html5"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="logo-css3"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon
-                        name="logo-javascript"
-                      ></ion-icon>
-                    </li>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MRM6VGVQB"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-5MRM6VGVQB');
+      </script>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!----------- CSS LINKING ----------->
+      <link rel="stylesheet" href="./css/general.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/queries.css" />
+      <!----------- FONT LINKING ----------->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+         rel="stylesheet"
+         />
+      <title>Designed by Ari</title>
+   </head>
+   <body>
+      <div class="page-container">
+         <div class="content-wrap">
+            <!----------- HEADER CONTAINS NAV BAR ----------->
+            <header id="navbar" class="header">
+               <!-- LOGO WILL GO HERE -->
+               <a href="#"></a>
+               <nav class="main-nav">
+                  <ul class="main-nav-list">
+                     <li>
+                        <a class="main-nav-link btn" href="./about-me.html"><span>About Me</span></a>
+                     </li>
+                     <li>
+                        <a class="main-nav-link btn" href="#section-projects"><span>My Work</span></a>
+                     </li>
+                     <li>
+                        <a class="main-nav-link btn" href="#testimonials"
+                           ><span>Testimonials</span></a
+                           >
+                     </li>
+                     <li>
+                        <a class="main-nav-link btn btn-alt" href="#contact-section"><span>Contact</span></a>
+                     </li>
                   </ul>
-                </div>
-                <p>Designed by Jonas Schmedtmann</p>
-                <p class="margin-bottom-xs">Programmed by Ariana Beltz & Jonas Schmedtmann</p>
-                <div class="margin-bottom-sm">
-                  <a
-                    href="https://ari-omnifood.netlify.app/"
-                    target="_blank"
-                    class="btn btn-alt"
-                    >See Project</a
-                  >
-                  <a
-                    href="https://github.com/aribeltz/ari-omnifood"
-                    target="_blank"
-                    class="btn btn-alt"
-                    >See Code</a
-                  >
-                </div>
-            </div>
-        </div>
-
-          <!--  -->
-          <!-- CAT TINDER -->
-          <!--  -->
-
-        </div>
-      </section>
-      <!-- ------------------------------ -->
-      <!----------- TESTIMONIALS SECTION ----------->
-      <!-- ------------------------------ -->
-      <section id="testimonials" class="section-testimonials container">
-        <div class="testimonials-wrapper">
-        <h2 class="heading-secondary">Testimonials:</h2>
-        <div class="testimonials-grid">
-          <div id="content" class="testimonial-box grid-item grid-item-1">
-            <div class="testimonial">
-              <blockquote>
-                <div class="quote-container">
-                  I have had the pleasure of working with Ari on several projects.
-                  For her level of experience she is an exceptionally good full
-                  stack developer. She always seeks more efficient ways to
-                  complete a project without cutting any corners, and is diligent
-                  about presenting the best final product as possible.
-                  Additionally, above her ability as a full stack developer is her
-                  ability to be a mentor to other developers who are not yet at
-                  her level of experience. She will take her personal time to help
-                  somebody who is struggling and do so in a way that helps further
-                  build the other persons understanding of the process. I would
-                  happily work with Ari on any project in the future.
-                </div>
-
-              </blockquote>
-              <p>David Thomas &mdash; Full-Stack Developer</p>
-            </div>
-          </div>
-
-          <div id="content" class="testimonial-box grid-item grid-item-2">
-            <div class="testimonial">
-              <blockquote>
-                <div class="quote-container">
-                  Ari has been such a wonderful partner during our time at LEARN. Not only is she a constant spark of joy and positivity, she is an energetic and hard worker! Always eager to step up, she was absolutely critical in developing the win condition on our Tic-Tac-Toe project.
-
-                </div>
-              
-              </blockquote>
-              <p class="testimonial-p-right">
-                Lyssa Martin &mdash; Full-Stack Developer
-              </p>
-            </div>
-          </div>
-
-          <div id="content" class="testimonial-box grid-item grid-item-3">
-            <div class="testimonial">
-              <blockquote>
-                <div class="quote-container">
-                  Ari is a super friendly teammate who likes to keep learning and finding the most efficient way of solving problems. Whether asking questions and finding potential solutions or willingly taking time out of her day to review and assist others, she is extremely reliable to depend on. With her natural skills in front-end, she can make anything look and feel better!
-                  
-                </div>
-
-              </blockquote>
-              
-              <p> Joseph Han &mdash; Full-Stack Developer  </p>
-            </div>
-          </div>
-
-          <div id="content" class="testimonial-box grid-item grid-item-4">
-            <div class="testimonial">
-              <blockquote>
-                <div class="quote-container">
-                  Ari is the “Queen of Design”. She has an incredible knowledge of
-                  CSS and HTML. She has a great concept of how container should be
-                  organized, placed on a page, and how a user will react to that
-                  design/layout. Ari is very easy to work with, communicates
-                  wonderfully, and can explain word problems (JavaScript) in great
-                  detail so anybody can understand. She’s been a great friend this
-                  cohort and someone I can rely on if I ever need help.
-
-                </div>
-
-              </blockquote>
-              <p class="testimonial-p-right">
-                Zack Rohde&mdash; Full-Stack Developer  
-              </p>
-            </div>
-          </div>
-        </div>
+               </nav>
+               <button class="btn-mobile-nav">
+                  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                  <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+               </button>
+            </header>
+            <main>
+               <!-- ------------------------------ -->
+               <!----------- HERO SECTION ----------->
+               <!-- ------------------------------ -->
+               <section class="section-hero container">
+                  <div class="hero">
+                     <div class="hero-text-box">
+                        <h1 class="heading-primary">Hi, I'm <span>Ari.</span></h1>
+                        <p class="hero-description margin-bottom-sm">
+                           I'm a full-stack developer with a passion for turning complex ideas into clean, scalable interfaces. 
+                           With a strong background in React and TypeScript, I focus on building front-end architectures that are as maintainable as they are aesthetically polished. 
+                        </p>
+                        <div class="programming-icons margin-bottom-md">
+                           <img src="./img/svg/React.svg" height="35" width="35"/>
+                           <img src="./img/svg/PostgresSQL.svg" height="35" width="35"/>
+                           <img src="./img/svg/Vite.js.svg" height="35" width="35"/>
+                           <img src="./img/svg/TypeScript.svg" height="35" width="35"/>
+                           <img src="./img/svg/HTML5.svg" height="35" width="35"/>
+                           <img src="./img/svg/CSS3.svg" height="35" width="35"/>
+                           <img src="./img/svg/Sass.svg" height="35" width="35"/>
+                           <img src="./img/svg/Docker.svg" height="35" width="35"/>
+                           <a  target="_blank" href="https://github.com/aribeltz"><img src="./img/svg/GitHub.svg" height="35" width="35"/></a>
+                           <a target="_blank" href="www.linkedin.com/in/ari-beltz"><img src="./img/svg/LinkedIn.svg" height="35" width="35"/></a>
+                        </div>
+                        <div class="hero_btn_box">
+                           <a href="#projects" class="btn btn-alt">My Work</a>
+                        </div>
+                     </div>
+                     <div class="hero-img">
+                        <picture>
+                           <source srcset="./img/hero-img.webp" type="image/webp" />
+                           <source srcset="./img/hero-img-min.png" type="image/png" />
+                           <img
+                              src="./img/hero-img-min.png"
+                              alt="An image of the website's author."
+                              />
+                        </picture>
+                     </div>
+                  </div>
+               </section>
+               <!-- ------------------------------ -->
+               <!----------- PROJECTS SECTION ----------->
+               <!-- ------------------------------ -->
+               <section id="section-projects" class="section-projects container">
+                  <div class = "projects-header">
+                     <h2
+                        class="heading-secondary"
+                        id="projects">
+                        Projects:
+                     </h2>
+                  </div>
+                  <div class="projects-grid">
+                     <!--  -->
+                     <!-- XPLORSTEM ACADEMY -->
+                     <!--  -->
+                     <div class="card grid-item projects-grid-item-1">
+                        <div class="video-box margin-bottom-sm">
+                           <div class="carousel">
+                              <div class="carousel-slides">
+                                 <div class="slide">
+                                    <img src="./img/hypothesis.gif" alt="Demonstration of Xplorstem Academy's hypothesis section." class="carousel-image">
+                                 </div>
+                                 <div class="slide">
+                                    <img src="./img/research.gif" alt="Demonstration of Xplorstem Academy's research section." class="carousel-image">
+                                 </div>
+                                 <div class="slide">
+                                    <img src="./img/experiment.gif" alt="Demonstration of Xplorstem Academy's experiment section." class="carousel-image">
+                                 </div>
+                                 <div class="slide">
+                                    <img src="./img/assessment.gif" alt="Demonstration of Xplorstem Academy's Assessment section." class="carousel-image">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="content">
+                           <h2 class="title margin-bottom-xs">Xplorstem Academy</h2>
+                           <div class="icons margin-bottom-xs">
+                              <ul>
+                                 <li><img src="./img/svg/Next.js.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/PostgresSQL.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/Express.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/Sass.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/Docker.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/AWS.svg" height="25" width="25"/></li>
+                              </ul>
+                           </div>
+                           <p class="margin-bottom-xs">A web application built around the concept that short-form videos make learning easier and more engaging for kids. Following the scientific process, users make a hypothesis, watch and respond to research videos to grow their knowledge, then complete a hands-on experiment to round out the entire experience.</p>
+                           <div class="margin-bottom-sm">
+                           </div>
+                        </div>
+                     </div>
+                     <!--  -->
+                     <!-- Pokemon Starter Battle -->
+                     <!--  -->
+                     <div class="card grid-item projects-grid-item-2">
+                        <div class="video-box margin-bottom-sm">
+                           <video
+                              class="video"
+                              src="./vid/pokemon-battle-demo.mp4"
+                              autoplay
+                              muted
+                              loop
+                              preload="auto"
+                              alt="A video showing gameplay of a pokemon themed rock-paper-scissors game."
+                              ></video>
+                        </div>
+                        <div class="content">
+                           <h2 class="title margin-bottom-xs">Pokemon Starter Battle</h2>
+                           <div class="icons margin-bottom-xs">
+                              <ul>
+                                 <li><img src="./img/svg/HTML5.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/CSS3.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/JavaScript.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/Github.svg" height="25" width="25"/></li>
+                              </ul>
+                           </div>
+                           <p class="margin-bottom-xs">Originally built as a challenge to create a more engaging version of rock-paper-scissors, this site allows users to choose from 5 generations of pokemon and battle them against a CPU.</p>
+                           <div class="margin-bottom-sm">
+                              <a
+                                 href="https://aribeltz.github.io/pokemon-battle/"
+                                 target="_blank"
+                                 class="btn btn-alt"
+                                 >See Project</a
+                                 >
+                              <a
+                                 href="https://github.com/aribeltz/pokemon-battle"
+                                 target="_blank"
+                                 class="btn btn-alt"
+                                 >See Code</a
+                                 >
+                           </div>
+                        </div>
+                     </div>
+                     <!--  -->
+                     <!-- WOW Translator -->
+                     <!--  -->
+                     <div class="card grid-item projects-grid-item-3">
+                        <div class="video-box margin-bottom-sm">
+                           <video
+                              class="video"
+                              src="./vid/wow-translator-demo.mp4"
+                              autoplay
+                              muted
+                              loop
+                              preload="auto"
+                              alt="A video showing a user typing text into a box which is then translated into a fake language from World of Warcraft."
+                              ></video>
+                        </div>
+                        <div class="content">
+                           <h2 class="title margin-bottom-xs">WoW Translator</h2>
+                           <div class="icons margin-bottom-xs">
+                              <ul>
+                                 <li><img src="./img/svg/Vite.js.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/React.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/CSS3.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/JavaScript.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/Github.svg" height="25" width="25"/></li>
+                              </ul>
+                           </div>
+                           <p class="margin-bottom-xs">This simple site was built after I realized that there was currently no alternative for users to access the racial text translations that are available in-game. It uses official translation tables to provide a way to speak in-character, outside of the game.</p>
+                           <div class="margin-bottom-sm">
+                              <a
+                                 href="https://aribeltz.github.io/WOW-Translator/"
+                                 target="_blank"
+                                 class="btn btn-alt"
+                                 >See Project</a
+                                 >
+                              <a
+                                 href="https://github.com/aribeltz/WOW-Translator"
+                                 target="_blank"
+                                 class="btn btn-alt"
+                                 >See Code</a
+                                 >
+                           </div>
+                        </div>
+                     </div>
+                     <!--  -->
+                     <!-- TIC-TAC-TOE -->
+                     <!--  -->
+                     <div class="card grid-item projects-grid-item-4">
+                        <div class="video-box margin-bottom-sm">
+                           <video
+                              class="video"
+                              src="./vid/tic-tac-toe.mp4"
+                              autoplay
+                              muted
+                              loop
+                              preload="auto"
+                              alt="A video showing gameplay of tic-tac-toe."
+                              ></video>
+                        </div>
+                        <div class="content">
+                           <h2 class="title margin-bottom-xs">Tic-Tac-Toe</h2>
+                           <div class="icons margin-bottom-xs">
+                              <ul>
+                                 <li><img src="./img/svg/React.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/CSS3.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/JavaScript.svg" height="25" width="25"/></li>
+                                 <li><img src="./img/svg/Github.svg" height="25" width="25"/></li>
+                              </ul>
+                           </div>
+                           <p class="margin-bottom-xs">A simple yet stylized version of tic-tac-toe, meant to be played by two people locally. Built as one of my first projects when I began my career transition.</p>
+                           <div class="margin-bottom-sm">
+                              <a
+                                 href="https://aribeltz.github.io/tic-tac-toe/"
+                                 target="_blank"
+                                 class="btn btn-alt"
+                                 >See Project</a
+                                 >
+                              <a
+                                 href="https://github.com/aribeltz/tic-tac-toe"
+                                 target="_blank"
+                                 class="btn btn-alt"
+                                 >See Code</a
+                                 >
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- ------------------------------ -->
+               <!----------- TESTIMONIALS SECTION ----------->
+               <!-- ------------------------------ -->
+               <section id="testimonials" class="section-testimonials container">
+                  <div class="testimonials-wrapper">
+                     <h2 class="heading-secondary">Testimonials:</h2>
+                     <div class="testimonials-grid">
+                        <div id="content" class="testimonial-box grid-item grid-item-1">
+                           <div class="testimonial">
+                              <blockquote>
+                                 <div class="quote-container">
+                                    I have had the pleasure of working with Ari on several projects.
+                                    For her level of experience she is an exceptionally good full
+                                    stack developer. She always seeks more efficient ways to
+                                    complete a project without cutting any corners, and is diligent
+                                    about presenting the best final product as possible.
+                                    Additionally, above her ability as a full stack developer is her
+                                    ability to be a mentor to other developers who are not yet at
+                                    her level of experience. She will take her personal time to help
+                                    somebody who is struggling and do so in a way that helps further
+                                    build the other persons understanding of the process. I would
+                                    happily work with Ari on any project in the future.
+                                 </div>
+                              </blockquote>
+                              <p>David Thomas &mdash; Full-Stack Developer</p>
+                           </div>
+                        </div>
+                        <div id="content" class="testimonial-box grid-item grid-item-2">
+                           <div class="testimonial">
+                              <blockquote>
+                                 <div class="quote-container">
+                                    Ari has been such a wonderful partner during our time at LEARN. Not only is she a constant spark of joy and positivity, she is an energetic and hard worker! Always eager to step up, she was absolutely critical in developing the win condition on our Tic-Tac-Toe project.
+                                 </div>
+                              </blockquote>
+                              <p class="testimonial-p-right">
+                                 Lyssa Martin &mdash; Full-Stack Developer
+                              </p>
+                           </div>
+                        </div>
+                        <div id="content" class="testimonial-box grid-item grid-item-3">
+                           <div class="testimonial">
+                              <blockquote>
+                                 <div class="quote-container">
+                                    Ari is a super friendly teammate who likes to keep learning and finding the most efficient way of solving problems. Whether asking questions and finding potential solutions or willingly taking time out of her day to review and assist others, she is extremely reliable to depend on. With her natural skills in front-end, she can make anything look and feel better!
+                                 </div>
+                              </blockquote>
+                              <p> Joseph Han &mdash; Full-Stack Developer  </p>
+                           </div>
+                        </div>
+                        <div id="content" class="testimonial-box grid-item grid-item-4">
+                           <div class="testimonial">
+                              <blockquote>
+                                 <div class="quote-container">
+                                    Ari is the “Queen of Design”. She has an incredible knowledge of
+                                    CSS and HTML. She has a great concept of how container should be
+                                    organized, placed on a page, and how a user will react to that
+                                    design/layout. Ari is very easy to work with, communicates
+                                    wonderfully, and can explain word problems (JavaScript) in great
+                                    detail so anybody can understand. She’s been a great friend this
+                                    cohort and someone I can rely on if I ever need help.
+                                 </div>
+                              </blockquote>
+                              <p class="testimonial-p-right">
+                                 Zack Rohde&mdash; Full-Stack Developer  
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </main>
+            <!-- ------------------------------ -->
+            <!----------- FORM SECTION ----------->
+            <!-- ------------------------------ -->
+            <footer>
+               <section id="contact-section" class="contact-section">
+                  <div class="contact-box">
+                     <h2 class="heading-secondary">Let's work together.</h2>
+                     <form class ="contact-form" action="https://formspree.io/f/xrgdyqqo" method="POST" name="contact-me">
+                        <div>
+                           <label for="name">Name:</label><br>
+                           <input type="text" placeholder="Name" id="name" name="name" class="name" required><br>
+                        </div>
+                        <div>
+                           <label for="email">Email:</label><br>
+                           <input type="email" placeholder="Email" id="email" name="email" class="email" required>
+                        </div>
+                        <div class="form-subject">
+                           <label for="subject">Subject:</label><br>
+                           <input type="text" placeholder="Subject" id="subject" name="subject" class="subject" required>
+                        </div>
+                        <div class="form-message">
+                           <label for="message">Message:</label><br>
+                           <textarea placeholder="Message" id="message" name="message" class="message" required></textarea>
+                        </div>
+                        <button input type="submit" class="btn btn-alt">Send</button>
+                     </form>
+                     <!-- <ion-icon class="email-svg" name="mail-outline"></ion-icon>
+                        <a
+                          href="mailto:ari.n.beltz@gmail.com?subject=Inquiry of Services"
+                        >
+                          ari.n.beltz@gmail.com</a
+                        > -->
+                  </div>
+         </div>
+         <!-- ------------------------------ -->
+         <!----------- FOOTER ----------->
+         <!-- ------------------------------ -->
+         <div class="footer">
+         <div class="footer-social">
+         <p class="margin-bottom-xs">Find me on social media:</p>
+         <div class="footer-icons margin-bottom-xs">
+         <a target="_blank" href="www.linkedin.com/in/ari-beltz"
+            ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+         <a target="_blank" href="https://github.com/aribeltz">
+         <ion-icon name="logo-github"></ion-icon>
+         </a>
+         </div>
+         </div>
+         <div class="footer-links">
+         <a target="_blank" href="https://drive.google.com/file/d/12XtAROEp0EiA5jZOWelw6lOW7D7-nWb4/view">Resume</a>
+         <a href="./about-me.html">About Me</a>
+         <a href="#section-projects">My Work</a>
+         <a href="#testimonials">Testimonials</a>
+         </div>
+         <div class="footer-box">
+         </div>
+         </section>
+         </footer>
+         <!----------- IONICONS ----------->
+         <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+            ></script>
+         <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+            ></script>
+         <!-- SMOOTH SCROLLING -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <!-------------------------------->
+         <!----------- SCRIPT LINKING ----------->
+         <script defer src="./js/script.js"></script>
+         </div>
       </div>
-      </section>
-    </main>
-    <!-- ------------------------------ -->
-    <!----------- FORM SECTION ----------->
-    <!-- ------------------------------ -->
-    <footer>
-      <section id="contact-section" class="contact-section">
-        <div class="contact-box">
-          <h2 class="heading-secondary">Let's work together.</h2>
-          
-            
-              <form class ="contact-form" action="https://formspree.io/f/xrgdyqqo" method="POST" name="contact-me">
-                <div>
-                <label for="name">Name:</label><br>
-                <input type="text" placeholder="Name" id="name" name="name" class="name" required><br>
-                </div>
-                <div>
-                <label for="email">Email:</label><br>
-                <input type="email" placeholder="Email" id="email" name="email" class="email" required>
-                </div>
-                <div class="form-subject">
-                <label for="subject">Subject:</label><br>
-                <input type="text" placeholder="Subject" id="subject" name="subject" class="subject" required>
-                </div>
-                <div class="form-message">
-                <label for="message">Message:</label><br>
-                <textarea placeholder="Message" id="message" name="message" class="message" required></textarea>
-                </div>
-
-                <button input type="submit" class="btn btn-alt">Send</button>
-              </form>
-              <!-- <ion-icon class="email-svg" name="mail-outline"></ion-icon>
-              <a
-                href="mailto:ari.n.beltz@gmail.com?subject=Inquiry of Services"
-              >
-                ari.n.beltz@gmail.com</a
-              > -->
-            
-          </div>
-        </div>
-            <!-- ------------------------------ -->
-            <!----------- FOOTER ----------->
-            <!-- ------------------------------ -->
-        <div class="footer">
-          <div class="footer-social">
-            <p class="margin-bottom-xs">Find me on social media:</p>
-            <div class="footer-icons margin-bottom-xs">
-              <a target="_blank" href="www.linkedin.com/in/ari-beltz"
-                ><ion-icon name="logo-linkedin"></ion-icon
-              ></a>
-              <a target="_blank" href="https://github.com/aribeltz">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </div>
-          </div>
-          <div class="footer-links">
-                <a target="_blank" href="https://drive.google.com/file/d/12XtAROEp0EiA5jZOWelw6lOW7D7-nWb4/view">Resume</a>
-                <a href="./about-me.html">About Me</a>
-                <a href="#section-projects">My Work</a>
-                <a href="#testimonials">Testimonials</a>
-          </div>
-
-          <div class="footer-box">
-                
-      
-        </div>
-        </section>
-    </footer>
-
-    <!----------- IONICONS ----------->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- SMOOTH SCROLLING -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-------------------------------->
-    <!----------- SCRIPT LINKING ----------->
-    <script defer src="./js/script.js"></script>
-  </div>
-</div>
-  </body>
+   </body>
 </html>
