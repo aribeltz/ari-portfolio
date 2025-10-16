@@ -196,6 +196,9 @@
 /* BELOW 544px (Phones) */
 /* ************************** */
 @media (max-width: 34em) {
+  .container {
+    padding: 0 1rem;
+  }
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
@@ -233,12 +236,11 @@
     margin-bottom: 14rem;
   }
 
-  .hero picture {
+  /* .hero picture {
     display: none;
-  }
+  } */
 
   .contact-box {
-
     padding-left: 4rem;
     padding-right: 4rem;
   }
